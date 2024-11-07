@@ -1,0 +1,32 @@
+{
+  "name": "application-electron-test",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "dist": "electron-builder",
+    "builder": "electron-builder"
+  },
+  "build": {
+    "appId": "com.mateusgandolfi.autoupdater",
+    "productName": "Electron Test App",
+    "win": {
+      "target": "nsis"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "keywords": [],
+  "author": "Mateus Gandolfi",
+  "license": "ISC",
+  "description": "My application for test electron",
+  "devDependencies": {
+    "electron": "^33.1.0"
+  },
+  "dependencies": {
+    "electron-builder": "^25.1.8",
+    "electron-updater": "^6.3.9"
+  }
+}
